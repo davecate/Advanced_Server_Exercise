@@ -1,5 +1,4 @@
-const path = require("path");
-const notes = require(path.resolve("src/data/notes-data"));
+const notes = require("../data/notes-data");
 
 function create(req, res) {
   const { data: { text } = {} } = req.body;
